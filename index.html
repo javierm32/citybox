@@ -1,0 +1,356 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITY BOX</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+      
+      <!-- Logo -->
+      <section id="logo-container">
+        <div class="text-center">
+          <img class="logo" src="assets/logo.png">
+        </div>
+      </section>
+      <!-- /Logo -->
+
+      <!-- Mobile Nav -->
+      <div id="mySidenav" class="sidenav" data-magellan>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Quienes somos</a>
+        <a href="#servicios-container" onclick="closeNav()">Servicios</a>
+        <a href="#ubicaciones-container"  onclick="closeNav()">Ubicaciones</a>
+        <a href="#contacto-container"  onclick="closeNav()">Contacto</a>
+        <hr>
+      </div>
+
+      <div id="mobileNavBar" class="show-for-small-only">
+        <a id="buguerMenu" href="javascript:void(0);" class="icon" onclick="openNav()">&#9776;</a>
+      </div>
+      <!-- /Mobile Nav -->
+
+      <!-- Nav -->
+      <section id="scrollSticky" data-sticky-container class="hide-for-small-only">
+        <div class="data-sticky" data-sticky id="sticky" data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky" >
+          <nav id="menu-container" data-magellan data-offset="13">
+            <ul class="menu align-spaced">
+              <li>
+                <a href="#">Quienes somos</a>
+              </li>
+              <li>
+                <a href="#servicios-container">Servicios</a>
+              </li>
+              <li>
+                <a href="#ubicaciones-container">Ubicaciones</a>
+              </li>
+              <li>
+                <a href="#contacto-container">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- /Nav -->
+
+      <!-- Hero -->
+      <section id="hero">
+        <div class="hero">
+          <div class="hero-text">
+            <h1 id="hero-text">Vive la experiencia de compra</h1>
+          </div>
+        </div>
+      </section>
+      <!-- /Hero -->
+      
+      <!-- Servicios -->
+      <section id="servicios-container" data-magellan-target="servicios-container">
+        <div id="servicios-container">
+          <div class="text-center header">
+            <h2 class="section-title">Servicios</h2>
+            <p class="section-subtitle">Damos el servicio de maquinas expendedoras para su oficina</p>
+          </div>
+          <div class="row">
+            <div class="small-12 medium-8 columns">
+              <ul id="servicios-lista">
+                
+                <div class="servicio">
+                  <img id="ser-icon" src="assets/update.png">
+                  <li >Ofrecemos maquinas expendedoras de ultima generación.</li>
+                </div>
+               
+               <div class="servicio">
+                 <img id="ser-icon" src="assets/monetization.png">
+                  <li >Nuestros productos se adaptan a su necesidad.</li>
+               </div>
+
+                <div class="servicio">
+                  <img id="ser-icon" src="assets/cart.png">
+                  <li >Manejamos más de 60 productos de botanas y bebidas.</li>
+                </div>
+
+                <div class="servicio">
+                  <img id="ser-icon" src="assets/repair.png">
+                  <li id="dS4">Las maquinas están monitoreadas por personal autorizado.</li>
+                </div>
+
+                <div class="servicio">
+                  <img id="ser-icon" src="assets/flash.png">
+                  <li id="dS5">Consume poca energía eléctrica.</li>
+                </div>
+
+                <div class="servicio">
+                  <img id="ser-icon" src="assets/star.png">
+                  <li id="dS6">Garantizamos la compra del producto y la calidad.</li>
+                </div>    
+              </ul>
+            </div>
+            <div class="small-12 medium-4 columns">
+              <center><img id="machine" src="assets/machine.png"></center>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="text-center section-subtitle">Nuestras maquinas manejan una variedad de productos</p>
+          <div class="row">
+            
+            <div class="product-container small-6 medium-4 columns">
+              <img class="product-image" src="assets/bebidas.jpg">
+              <p class="product">Bebidas</p>
+            </div>
+            
+            <div class="product-container small-6 medium-4 columns">
+              <img class="product-image" src="assets/golosinas.jpg">
+              <p class="product">Golosinas</p>
+            </div>
+            
+            <div class="product-container small-6 medium-4 columns">
+              <img class="product-image" src="assets/snacks.jpg">
+              <p class="product">Snacks</p>
+            </div>
+  
+            <div class="product-container small-6 medium-4 columns">
+              <img class="product-image" src="assets/confiteria.jpg">
+              <p class="product">Confiteria</p>
+            </div>
+            
+            <div class="product-container small-6 medium-4 columns">
+              <img class="product-image" src="assets/panaderia.jpg">
+              <p class="product">Alimentos saludables</p>
+            </div>
+            
+            <div class="product-container small-6 medium-4 columns">
+              <img class="product-image" src="assets/sano.jpg">
+              <p class="product">Panaderia</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- /Servicios -->
+      
+      <!-- Ubicaciones -->
+      <section id="ubicaciones-container">
+        <div class="text-center header">
+          <h2 class="section-title">Ubicaciones</h2>
+          <p class="text-center section-subtitle">Encuentra nuestras maquinas</p>
+        </div>
+        <div id="locaciones">
+          <a id="myBtn1" class="location">Torre Académica</a>
+          <a id="myBtn2" class="location">Industrias Recio</a>
+          <a id="myBtn3" class="location">Preparatoria Zapata</a>
+          <a id="myBtn4" class="location">Hospital Civil</a>
+        </div>
+        <div id="map" style="width:100%;height:420px"></div>
+  
+      </section>
+      <!-- /Ubicaciones -->
+      
+      <!-- Contacto -->
+      <section id="contacto-container">
+        <div class="text-center header">
+          <h2 class="section-title">Contacto</h2>
+          <p class="section-subtitle">Te interesa poner nuestras maquinas en tu empresa, contactanos!!</p>
+        </div>
+        <form>
+          <div class="row">
+            <div class="small-12 medium-6 columns">
+              <label>Nombre
+                <input type="text">
+              </label>
+            </div>
+            <div class="small-12 medium-6 columns">
+              <label>Apellido
+                <input type="text">
+              </label>
+            </div>
+            <div class="small-12 medium-6 columns">
+              <label>Teléfono
+                <input type="text">
+              </label>
+            </div>
+            <div class="small-12 medium-6 columns">
+              <label>Correo electronico
+                <input type="text">
+              </label>
+            </div>
+            <div class="small-12 columns">
+              <label>Mensaje
+                <textarea></textarea>
+              </label>
+            </div>
+            <div class="small-12 columns">
+              <a id="contact-button" class="button expanded" href="#">Contactanos</a>
+            </div>
+          </div>
+        </form>  
+      </section>
+      <!-- /Contacto -->
+      
+      <!-- Social -->
+      <section id="social-container">
+        <div class="row align-center text-center">
+          <div>
+            <a href="#">
+              <i class="fi-social-facebook"></i>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <i class="fi-social-twitter"></i>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <i class="fi-social-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- /Contacto -->
+
+      <!-- Footer -->
+      <section id="footer-container">
+        <div class="row">
+          <h5>Citybox</h5>
+        </div>
+        <div class="row footer">
+          <div class="column">
+            <p>Copyright 2017 Revsys, S.A. de C.V. Todos los Derechos Reservados.</p>
+          </div>
+          <div class="column">
+            <p id="aviso-privacidad"><a href="#">Aviso de privacidad</a></p>
+          </div>
+        </div>
+      </section>
+      <!-- /Footer -->
+
+    </div>
+    <script type="text/javascript">
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+  }
+</script>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(24.771474, -107.400529);
+  var torreAcademica = new google.maps.LatLng(24.821604, -107.382564);
+  var industriasRecio = new google.maps.LatLng(24.710518, -107.384662);
+  var preparatoriaZapata = new google.maps.LatLng(24.822047, -107.382080);
+  var hospitalCivil = new google.maps.LatLng(24.820147, -107.395753);
+
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 12};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  
+  var marker1 = new google.maps.Marker({position: torreAcademica});
+  marker1.setMap(map);
+  var marker2 = new google.maps.Marker({position: industriasRecio});
+  marker2.setMap(map);
+  var marker3 = new google.maps.Marker({position: preparatoriaZapata});
+  marker3.setMap(map);
+  var marker4 = new google.maps.Marker({position:  hospitalCivil});
+  marker4.setMap(map);
+   
+  document.getElementById("myBtn1").addEventListener("click", displayLocation1);
+  document.getElementById("myBtn2").addEventListener("click", displayLocation2);
+  document.getElementById("myBtn3").addEventListener("click", displayLocation3);
+  document.getElementById("myBtn4").addEventListener("click", displayLocation4);
+
+  function displayLocation1() {
+    var infowindow = new google.maps.InfoWindow({
+      content:"Torre Académica - 2 maquinas"
+    });
+    infowindow.open(map,marker1);
+  }
+
+  function displayLocation2() {
+    var infowindow = new google.maps.InfoWindow({
+      content:"Industrias Recio - 4 maquinas"
+    });
+    infowindow.open(map,marker2);
+  }
+
+  function displayLocation3() {
+    var infowindow = new google.maps.InfoWindow({
+      content:"Preparatoria Zapata - 1 maquina"
+    });
+    infowindow.open(map,marker3);
+  }
+
+  function displayLocation4() {
+    var infowindow = new google.maps.InfoWindow({
+      content:"Hospital Civil - 2 maquinas"
+    });
+    infowindow.open(map,marker4);
+  }
+
+  google.maps.event.addListener(marker1,'click',function() {
+    var infowindow = new google.maps.InfoWindow({
+      content:"Torre Académica - 2 maquinas"
+    });
+  infowindow.open(map,marker1);
+  });
+
+  google.maps.event.addListener(marker2,'click',function() {
+    var infowindow = new google.maps.InfoWindow({
+      content:"Industrias Recio - 4 maquinas"
+    });
+  infowindow.open(map,marker2);
+  });
+
+  google.maps.event.addListener(marker3,'click',function() {
+    var infowindow = new google.maps.InfoWindow({
+      content:"Preparatoria Zapata - 1 maquina"
+    });
+  infowindow.open(map,marker3);
+  });
+
+  google.maps.event.addListener(marker4,'click',function() {
+    var infowindow = new google.maps.InfoWindow({
+      content:"Hospital Civil - 2 maquinas"
+    });
+  infowindow.open(map,marker4);
+  });
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbFy2cjoGGWybu_u4Te23uNWht-3G1aZM&callback=myMap"></script>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
