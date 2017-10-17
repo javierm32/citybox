@@ -41,7 +41,7 @@
 
 	#buguerMenu {
 		color: #ffffff;
-		font-size: 24px;
+		font-size: 36px;
 		padding: 16px;
 	}
 
@@ -152,7 +152,7 @@
 	}
 
 	#servicios-container li {
-		font-size: 1.35em;
+		font-size: 1.3em;
 		font-weight: 300;
 		color: #333;
 		padding: 0px 8px;
