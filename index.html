@@ -44,7 +44,6 @@
         </div>
       </div>
 
-
       <div id="mobileNavBar" class="show-for-small-only">
         <a id="buguerMenu" href="javascript:void(0);" class="icon" onclick="openNav()">&#9776;</a>
       </div>
@@ -95,33 +94,35 @@
               <ul id="servicios-lista">
                 
                 <div class="servicio">
-                  <img id="ser-icon" src="assets/update.png">
-                  <li >Ofrecemos maquinas expendedoras de ultima generación.</li>
+                  <!-- <img id="ser-icon" src="assets/update.png"> -->      
+                  <li ><i id="ser-icon" class="fa fa-check" aria-hidden="true"></i>Ofrecemos maquinas expendedoras de ultima generación.</li>
                 </div>
                
                <div class="servicio">
-                 <img id="ser-icon" src="assets/monetization.png">
-                  <li >Nuestros productos se adaptan a su necesidad.</li>
+                  <!-- <img id="ser-icon" src="assets/monetization.png"> -->
+                  <li ><i id="ser-icon" class="fa fa-building" aria-hidden="true"></i></i>Nuestros productos se adaptan a su necesidad.</li>
                </div>
 
                 <div class="servicio">
-                  <img id="ser-icon" src="assets/cart.png">
-                  <li >Manejamos más de 60 productos de botanas y bebidas.</li>
+                  <!-- <img id="ser-icon" src="assets/cart.png"> -->
+                  <li ><i id="ser-icon" class="fa fa-cart-plus" aria-hidden="true"></i></i>Manejamos más de 60 productos de botanas y bebidas.</li>
                 </div>
 
                 <div class="servicio">
-                  <img id="ser-icon" src="assets/repair.png">
-                  <li id="dS4">Las maquinas están monitoreadas por personal autorizado.</li>
+                  <!-- <img id="ser-icon" src="assets/repair.png"> -->
+                  <li><i id="ser-icon" class="fa fa-wrench" aria-hidden="true"></i></i>Las maquinas están monitoreadas por personal autorizado.</li>
                 </div>
 
                 <div class="servicio">
-                  <img id="ser-icon" src="assets/flash.png">
-                  <li id="dS5">Consume poca energía eléctrica.</li>
+                  <!-- <img id="ser-icon" src="assets/flash.png"> -->
+                  <li>
+                  <i id="ser-icon" class="fa fa-bolt" aria-hidden="true"></i>Consume poca energía eléctrica.</li>
                 </div>
 
                 <div class="servicio">
-                  <img id="ser-icon" src="assets/star.png">
-                  <li id="dS6">Garantizamos la compra del producto y la calidad.</li>
+                  <!-- <img id="ser-icon" src="assets/star.png"> -->
+                  <li>
+                  <i id="ser-icon" class="fa fa-certificate" aria-hidden="true"></i>Garantizamos la compra del producto y la calidad.</li>
                 </div>    
               </ul>
             </div>
@@ -227,36 +228,31 @@
       </section>
       <!-- /Contacto -->
       
-      <!-- Social -->
-      <section id="social-container">
-        <div class="row align-center text-center">
+      <!-- Footer -->
+      <section id="footer-container">
+        <div id="social-container" class="row align-right text-center">
           <div>
             <a href="#">
-              <i class="fi-social-facebook"></i>
+              <i class="fi-social-facebook social-f"></i>
             </a>
           </div>
           <div>
             <a href="#">
-              <i class="fi-social-twitter"></i>
+              <i class="fi-social-twitter social-f"></i>
             </a>
           </div>
           <div>
             <a href="#">
-              <i class="fi-social-instagram"></i>
+              <i class="fi-social-instagram social-f"></i>
             </a>
           </div>
         </div>
-      </section>
-      <!-- /Contacto -->
-
-      <!-- Footer -->
-      <section id="footer-container">
         <div class="row">
-          <h5>Citybox</h5>
+          <h4>Citybox</h4>
         </div>
         <div class="row footer">
           <div class="column">
-            <p>Copyright 2017 Revsys, S.A. de C.V. Todos los Derechos Reservados.</p>
+            <p id="">Copyright 2017 Revsys, S.A. de C.V. Todos los Derechos Reservados.</p>
           </div>
           <div class="column">
             <p id="aviso-privacidad"><a href="#">Aviso de privacidad</a></p>
@@ -266,99 +262,6 @@
       <!-- /Footer -->
 
     </div>
-    <script type="text/javascript">
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
-
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0px";
-  }
-</script>
-
-<script>
-function myMap() {
-  var myCenter = new google.maps.LatLng(24.771474, -107.400529);
-  var torreAcademica = new google.maps.LatLng(24.821604, -107.382564);
-  var industriasRecio = new google.maps.LatLng(24.710518, -107.384662);
-  var preparatoriaZapata = new google.maps.LatLng(24.822047, -107.382080);
-  var hospitalCivil = new google.maps.LatLng(24.820147, -107.395753);
-
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 12};
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  
-  var marker1 = new google.maps.Marker({position: torreAcademica});
-  marker1.setMap(map);
-  var marker2 = new google.maps.Marker({position: industriasRecio});
-  marker2.setMap(map);
-  var marker3 = new google.maps.Marker({position: preparatoriaZapata});
-  marker3.setMap(map);
-  var marker4 = new google.maps.Marker({position:  hospitalCivil});
-  marker4.setMap(map);
-   
-  document.getElementById("myBtn1").addEventListener("click", displayLocation1);
-  document.getElementById("myBtn2").addEventListener("click", displayLocation2);
-  document.getElementById("myBtn3").addEventListener("click", displayLocation3);
-  document.getElementById("myBtn4").addEventListener("click", displayLocation4);
-
-  function displayLocation1() {
-    var infowindow = new google.maps.InfoWindow({
-      content:"Torre Académica - 2 maquinas"
-    });
-    infowindow.open(map,marker1);
-  }
-
-  function displayLocation2() {
-    var infowindow = new google.maps.InfoWindow({
-      content:"Industrias Recio - 4 maquinas"
-    });
-    infowindow.open(map,marker2);
-  }
-
-  function displayLocation3() {
-    var infowindow = new google.maps.InfoWindow({
-      content:"Preparatoria Zapata - 1 maquina"
-    });
-    infowindow.open(map,marker3);
-  }
-
-  function displayLocation4() {
-    var infowindow = new google.maps.InfoWindow({
-      content:"Hospital Civil - 2 maquinas"
-    });
-    infowindow.open(map,marker4);
-  }
-
-  google.maps.event.addListener(marker1,'click',function() {
-    var infowindow = new google.maps.InfoWindow({
-      content:"Torre Académica - 2 maquinas"
-    });
-  infowindow.open(map,marker1);
-  });
-
-  google.maps.event.addListener(marker2,'click',function() {
-    var infowindow = new google.maps.InfoWindow({
-      content:"Industrias Recio - 4 maquinas"
-    });
-  infowindow.open(map,marker2);
-  });
-
-  google.maps.event.addListener(marker3,'click',function() {
-    var infowindow = new google.maps.InfoWindow({
-      content:"Preparatoria Zapata - 1 maquina"
-    });
-  infowindow.open(map,marker3);
-  });
-
-  google.maps.event.addListener(marker4,'click',function() {
-    var infowindow = new google.maps.InfoWindow({
-      content:"Hospital Civil - 2 maquinas"
-    });
-  infowindow.open(map,marker4);
-  });
-}
-</script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbFy2cjoGGWybu_u4Te23uNWht-3G1aZM&callback=myMap"></script>
 
