@@ -1,13 +1,23 @@
 $(document).foundation()
 
 
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
+  //document.getElementById("scrollSticky").style.display = "none";
+  document.getElementById("container").style.opacity="0.5"
+  
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0px";
+  //document.getElementById("scrollSticky").style.display = "block";
+  document.getElementById("container").style.opacity="1"
+  
 }
+
+
+
 
 function myMap() {
   var myCenter = new google.maps.LatLng(24.771474, -107.400529);

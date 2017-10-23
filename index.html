@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html class="no-js" lang="es-MX" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,24 +9,16 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
   </head>
   <body>
     <div class="off-canvas-wrapper">
       
-      <!-- Logo -->
-      <section id="logo-container">
-        <div class="text-center">
-          <img class="logo" src="assets/logo.png">
-        </div>
-      </section>
-      <!-- /Logo -->
 
-      <!-- Mobile Nav -->
-      <section>
+
+      <!-- Mobile Side nav -->
       <div id="mySidenav" class="sidenav" data-sticky-container data-magellan>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Quienes somos</a>
+        <a href="#servicios-container">Quienes somos</a>
         <a href="#servicios-container" onclick="closeNav()">Servicios</a>
         <a href="#ubicaciones-container"  onclick="closeNav()">Ubicaciones</a>
         <a href="#contacto-container"  onclick="closeNav()">Contacto</a>
@@ -44,18 +36,24 @@
           <p id="copy">Copyright 2017 Citybox, Todos los Derechos Reservados.</p>
         </div>
       </div>
+      <!-- /Mobile Side nav -->
+     
+      <!-- /Logo -->
+      <div id="container">
 
-      <div id="mobileNavBar" class="show-for-small-only">
-        <a id="buguerMenu" href="javascript:void(0);" class="icon" onclick="openNav()">&#9776;</a>
-      </div>
+       <!-- Logo -->
+      <section id="logo-container">
+        <div class="text-center">
+          <img class="logo" src="assets/logo.png">
+        </div>
       </section>
-      <!-- /Mobile Nav -->
+      <!-- /Logo -->
 
       <!-- Nav -->
-      <section id="scrollSticky" data-sticky-container class="hide-for-small-only">
+      <section id="scrollSticky" class="nav-container" data-sticky-container>
         <div class="data-sticky" data-sticky id="sticky" data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky" >
           <nav id="menu-container" data-magellan data-offset="13">
-            <ul class="menu align-spaced">
+            <ul class="menu align-spaced hide-for-small-only">
               <li>
                 <a href="#">Quienes somos</a>
               </li>
@@ -68,7 +66,8 @@
               <li>
                 <a href="#contacto-container">Contacto</a>
               </li>
-            </ul>
+            </ul>            
+            <a id="buguerMenu" href="javascript:void(0);" class="icon show-for-small-only" onclick="openNav()">&#9776;</a>
           </nav>
         </div>
       </section>
@@ -262,10 +261,11 @@
       </section>
       <!-- /Footer -->
 
-    </div>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbFy2cjoGGWybu_u4Te23uNWht-3G1aZM&callback=myMap"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbFy2cjoGGWybu_u4Te23uNWht-3G1aZM&callback=myMap"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script type="text/javascript">
+      
+    </script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>

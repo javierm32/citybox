@@ -2,6 +2,10 @@
 	border: 0px;
 }
 
+#container {
+
+}
+
 
 #logo-container {
 
@@ -14,17 +18,17 @@
 }
 
 #menu-container {
-	background-color: #DF0424;
+	background-color: rgb(255, 0, 0);opacity:0.9;
 }
 
 #menu-container li a {
+	font-weight: bold;
 	color: white;
 }
 
 #menu-container li a:hover {
 	color: #e0e0e0;
 }
-
 
 .hero {
   	background: url("../assets/hero-image.jpg");
@@ -33,7 +37,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;  
-	 background-attachment: fixed;
+	background-attachment: fixed;
 }
 
 #hero-text {
@@ -47,15 +51,16 @@
     	}
 	}
 
-
-	#mobileNavBar {
-		background: #DF0424;
-	}
-
 	#buguerMenu {
 		color: #ffffff;
 		font-size: 32px;
 		padding: 16px;
+	}
+
+@media screen and (max-width: 450px) {
+    	#menu-container {
+    		background-color: rgb(255, 0, 0);opacity:0.9;
+    	}
 	}
 
 .hero-text {
@@ -66,8 +71,6 @@
 	transform: translate(-50%, -50%);
 	color: white;
 }
-
-
 
 /* Footer */
 
@@ -128,7 +131,7 @@
 		height: 100%;
 		width: 0;
 		position: fixed;
-		z-index: 1;
+		z-index: 6;
 		top: 0;
 		left: 0;
 		background-color: rgb(255, 0, 0);opacity:0.9;
@@ -266,8 +269,6 @@
 		max-width: 100%;
 		}
 	}
-
-	
 
 	#ubicaciones-container {
 		background-color: #f3f3f3;
