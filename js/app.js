@@ -1,6 +1,6 @@
 $(document).foundation()
 
-
+// Side Nav
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -17,7 +17,7 @@ function closeNav() {
 }
 
 
-
+// Google Maps
 
 function myMap() {
   var myCenter = new google.maps.LatLng(24.771474, -107.400529);
