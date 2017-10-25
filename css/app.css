@@ -291,7 +291,6 @@
 
 
 @media (-webkit-min-device-pixel-ratio: 2) { 
-  
   #hero {
     background-image: url("../assets/hero-image2x.jpg");
   }
