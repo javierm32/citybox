@@ -91,12 +91,12 @@
 /* Hero */
 .hero {
   background: url("../assets/hero-image.jpg");
-  height: 60vh;
+  height: 400px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;  
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 }
 
 .hero-text {
