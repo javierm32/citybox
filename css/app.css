@@ -90,7 +90,7 @@
 
 /* Hero */
 .hero {
-  background: url("../assets/hero-image.jpg");
+  background-image: url("../assets/hero-image.jpg");
   height: 400px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -291,8 +291,11 @@
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    border: 10px solid red;
+  }
   .hero {
-    background: url("../assets/hero-image2x.jpg");
+    background-image: url("../assets/hero-image2x.jpg");
   }
 }
 	
