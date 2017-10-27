@@ -294,4 +294,10 @@
   #hero {
     background-image: url("../assets/hero-image2x.jpg");
   }
-   }
+}
+
+@media only screen and (max-device-width: 1024px) {
+  #hero {
+    background-attachment: scroll;
+  }
+}
