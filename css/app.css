@@ -39,7 +39,7 @@
 }
 
 .sidenav a:hover, .offcanvas a:focus {
-  color: #e0e0e0;
+  color: #FFFFFF;
 }
 
 .sidenav .closebtn {
@@ -77,7 +77,7 @@
 }
 
 #menu-container li a:hover {
-	color: #e0e0e0;
+	color: #FFFFFF;
 }
 
 #buguerMenu {
@@ -247,6 +247,15 @@
 }
 /* Footer */
 
+#perfil-container p, ul {
+  font-size: 1.3em;
+  font-weight: 300;
+  color: #333;
+  padding: 0 15px;
+}
+
+
+
 
 @media screen and (max-width: 450px) {
   #hero-text {
@@ -260,11 +269,12 @@
   #footer-container h4, .footer {
     padding: 8px 15px;
   }
-
+  /*
   .sidenav {
     padding-top: 15px;
   }
-    
+  */
+
   .sidenav a {
     font-size: 18px;
   }

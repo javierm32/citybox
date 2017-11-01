@@ -15,7 +15,7 @@
       <!-- Mobile Side nav -->
       <div id="mySidenav" class="sidenav" data-sticky-container data-magellan>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#servicios-container">Quienes somos</a>
+        <a href="nosotros.html">Quienes somos</a>
         <a href="#servicios-container" onclick="closeNav()">Servicios</a>
         <a href="#ubicaciones-container"  onclick="closeNav()">Ubicaciones</a>
         <a href="#contacto-container"  onclick="closeNav()">Contacto</a>
@@ -41,7 +41,7 @@
         <!-- Logo -->
         <section id="logo-container">
           <div class="text-center">
-            <img class="logo" src="assets/logo.png">
+            <a href="index.html"><img class="logo" src="assets/logo.png"></a>
           </div>
         </section>
         <!-- /Logo -->
@@ -52,7 +52,7 @@
             <nav id="menu-container" data-magellan data-offset="13">
               <ul class="menu align-spaced hide-for-small-only">
                 <li>
-                  <a href="#">Quienes somos</a>
+                  <a href="nosotros.html">Quienes somos</a>
                 </li>
                 <li>
                   <a href="#servicios-container">Servicios</a>
@@ -156,6 +156,32 @@
               </div>
             </div>
           </div>
+          <div class="row">
+              
+              <div class="product-container small-6 medium-4 columns">
+                <img class="product-image" data-src="assets/rectangle.jpg" alt="Bebidas">
+              </div>
+              
+              <div class="product-container small-6 medium-4 columns">
+                <img class="product-image" data-src="assets/rectangle.jpg" alt="Golosinas">
+              </div>
+              
+              <div class="product-container small-6 medium-4 columns">
+                <img class="product-image" data-src="assets/rectangle.jpg" alt="Snacks">
+              </div>
+    
+              <div class="product-container small-6 medium-4 columns">
+                <img class="product-image" data-src="assets/rectangle.jpg" alt="Confiteria">
+              </div>
+              
+              <div class="product-container small-6 medium-4 columns">
+                <img class="product-image" data-src="assets/rectangle.jpg" alt="Pan dulce">                
+              </div>
+              
+              <div class="product-container small-6 medium-4 columns">
+                <img class="product-image" data-src="assets/rectangle.jpg" alt="Alimentos saludables">
+              </div>
+            </div>
         </section>
         <!-- /Servicios -->
         
@@ -181,26 +207,26 @@
             <h2 class="section-title">Contacto</h2>
             <p class="section-subtitle">Te interesa poner nuestras maquinas en tu empresa, contactanos!!</p>
           </div>
-          <form>
+          <form action="https://formspree.io/javier@revsys.com.mx" method="POST" novalidate data-abide>
             <div class="row">
               <div class="small-12 medium-6 columns">
                 <label>Nombre
-                  <input type="text">
+                  <input type="text" name="nombre" value="" required>
                 </label>
               </div>
               <div class="small-12 medium-6 columns">
                 <label>Apellido
-                  <input type="text">
+                  <input type="text" name="apellido" value="" required>
                 </label>
               </div>
               <div class="small-12 medium-6 columns">
                 <label>Teléfono
-                  <input type="text">
+                  <input type="tel" name="tel" value="" required>
                 </label>
               </div>
               <div class="small-12 medium-6 columns">
                 <label>Correo electronico
-                  <input type="text">
+                  <input type="email" name="email" value="" required>
                 </label>
               </div>
               <div class="small-12 columns">
