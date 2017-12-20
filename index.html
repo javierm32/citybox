@@ -86,18 +86,18 @@
           <div id="servicios-container">
             <div class="text-center header">
               <h2 class="section-title">Servicios</h2>
-              <p class="section-subtitle">Damos el servicio de maquinas expendedoras para su oficina</p>
+              <p class="section-subtitle">Damos el servicio de máquinas expendedoras para su oficina</p>
             </div>
             <div class="row">
               <div class="small-12 medium-8 columns">
                 <ul id="servicios-lista">
                   
                  <div class="servicio">  
-                    <li ><i id="ser-icon" class="fa fa-check" aria-hidden="true"></i>Ofrecemos maquinas expendedoras de ultima generación.</li>
+                    <li ><i id="ser-icon" class="fa fa-check" aria-hidden="true"></i>Ofrecemos máquinas expendedoras de última generación.</li>
                  </div>
                  
                  <div class="servicio">
-                    <li ><i id="ser-icon" class="fa fa-building" aria-hidden="true"></i></i>Nuestros productos se adaptan a su necesidad.</li>
+                    <li ><i id="ser-icon" class="fa fa-building" aria-hidden="true"></i></i>Nuestros productos se adaptan a sus necesidades.</li>
                  </div>
 
                   <div class="servicio">
@@ -105,7 +105,7 @@
                   </div>
 
                   <div class="servicio">  
-                    <li><i id="ser-icon" class="fa fa-wrench" aria-hidden="true"></i></i>Las maquinas están monitoreadas por personal autorizado.</li>
+                    <li><i id="ser-icon" class="fa fa-wrench" aria-hidden="true"></i></i>Las máquinas están monitoreadas por personal autorizado.</li>
                   </div>
 
                   <div class="servicio">            
@@ -125,7 +125,7 @@
             </div>
           </div>
           <div>
-            <p class="text-center section-subtitle">Nuestras maquinas manejan una variedad de productos</p>
+            <p class="text-center section-subtitle">Nuestras máquinas manejan una variedad de productos</p>
             <div class="row">
               
               <div class="product-container small-4 medium-2 columns">
@@ -145,7 +145,7 @@
               
               <div class="product-container small-4 medium-2 columns">
                 <img class="product-image" data-src="assets/confiteria.jpg" alt="Confiteria">
-                <p class="product">Confiteria</p>
+                <p class="product">Confitería</p>
               </div>
               
               <div class="product-container small-4 medium-2 columns">
@@ -193,13 +193,14 @@
         <section id="ubicaciones-container">
           <div class="text-center header">
             <h2 class="section-title">Ubicaciones</h2>
-            <p class="text-center section-subtitle">Encuentra nuestras maquinas</p>
+            <p class="text-center section-subtitle">Encuentra nuestras máquinas</p>
           </div>
           <div id="locaciones">
             <a id="myBtn1" class="location">Torre Académica</a>
             <a id="myBtn2" class="location">Industrias Recio</a>
             <a id="myBtn3" class="location">Preparatoria Zapata</a>
             <a id="myBtn4" class="location">Hospital Civil</a>
+            <a id="myBtn5" class="location">Hospital General</a>
           </div>
           <div id="map" style="width:100%;height:420px"></div>
         </section>
@@ -209,7 +210,7 @@
         <section id="contacto-container">
           <div class="text-center header">
             <h2 class="section-title">Contacto</h2>
-            <p class="section-subtitle">Te interesa poner nuestras maquinas en tu empresa, contactanos!!</p>
+            <p class="section-subtitle">Te interesa poner nuestras máquinas en tu empresa, contactanos!!</p>
           </div>
           <form action="send_form.php" method="POST" novalidate data-abide>
             <div class="row">
@@ -327,6 +328,7 @@
         var industriasRecio = new google.maps.LatLng(24.710518, -107.384662);
         var preparatoriaZapata = new google.maps.LatLng(24.822047, -107.382080);
         var hospitalCivil = new google.maps.LatLng(24.820147, -107.395753);
+        var hospitalGeneral = new google.maps.LatLng(24.794597, -107.387142);
 
         var mapCanvas = document.getElementById("map");
         var mapOptions = {center: myCenter, zoom: 12};
@@ -340,11 +342,15 @@
         marker3.setMap(map);
         var marker4 = new google.maps.Marker({position:  hospitalCivil});
         marker4.setMap(map);
+        var marker5 = new google.maps.Marker({position:  hospitalGeneral});
+        marker5.setMap(map);
+        
          
         document.getElementById("myBtn1").addEventListener("click", displayLocation1);
         document.getElementById("myBtn2").addEventListener("click", displayLocation2);
         document.getElementById("myBtn3").addEventListener("click", displayLocation3);
         document.getElementById("myBtn4").addEventListener("click", displayLocation4);
+        document.getElementById("myBtn5").addEventListener("click", displayLocation5);
 
         function displayLocation1() {
           var infowindow = new google.maps.InfoWindow({
@@ -374,6 +380,13 @@
           infowindow.open(map,marker4);
         }
 
+        function displayLocation5() {
+          var infowindow = new google.maps.InfoWindow({
+            content:"Hospital General - 1 maquina"
+          });
+          infowindow.open(map,marker5);
+        }
+
         google.maps.event.addListener(marker1,'click',function() {
           var infowindow = new google.maps.InfoWindow({
             content:"Torre Académica - 2 maquinas"
@@ -401,6 +414,14 @@
           });
         infowindow.open(map,marker4);
         });
+
+        google.maps.event.addListener(marker5,'click',function() {
+          var infowindow = new google.maps.InfoWindow({
+            content:"Hospital Civil - 2 maquinas"
+          });
+        infowindow.open(map,marker5);
+        });
+
       }
     </script>      
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7KZP6iyS0aSz96aIaVi87msMr1ZNfkYM&callback=myMap"
