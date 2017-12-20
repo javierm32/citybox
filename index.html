@@ -89,9 +89,9 @@
               <div class="small-12 medium-8 columns">
                 <ul id="servicios-lista">
                   
-                  <div class="servicio">  
+                 <div class="servicio">  
                     <li ><i id="ser-icon" class="fa fa-check" aria-hidden="true"></i>Ofrecemos maquinas expendedoras de ultima generación.</li>
-                  </div>
+                 </div>
                  
                  <div class="servicio">
                     <li ><i id="ser-icon" class="fa fa-building" aria-hidden="true"></i></i>Nuestros productos se adaptan a su necesidad.</li>
@@ -125,61 +125,62 @@
             <p class="text-center section-subtitle">Nuestras maquinas manejan una variedad de productos</p>
             <div class="row">
               
-              <div class="product-container small-6 medium-4 columns">
+              <div class="product-container small-4 medium-2 columns">
                 <img class="product-image" data-src="assets/bebidas.jpg" alt="Bebidas">
                 <p class="product">Bebidas</p>
               </div>
               
-              <div class="product-container small-6 medium-4 columns">
+              <div class="product-container small-4 medium-2 columns">
                 <img class="product-image" data-src="assets/golosinas.jpg" alt="Golosinas">
                 <p class="product">Golosinas</p>
               </div>
               
-              <div class="product-container small-6 medium-4 columns">
+              <div class="product-container small-4 medium-2 columns">
                 <img class="product-image" data-src="assets/snacks.jpg" alt="Snacks">
                 <p class="product">Snacks</p>
               </div>
-    
-              <div class="product-container small-6 medium-4 columns">
+              
+              <div class="product-container small-4 medium-2 columns">
                 <img class="product-image" data-src="assets/confiteria.jpg" alt="Confiteria">
                 <p class="product">Confiteria</p>
               </div>
               
-              <div class="product-container small-6 medium-4 columns">
+              <div class="product-container small-4 medium-2 columns">
                 <img class="product-image" data-src="assets/pan.jpg" alt="Pan dulce">
                 <p class="product">Pan dulce</p>
               </div>
               
-              <div class="product-container small-6 medium-4 columns">
+              <div class="product-container small-4 medium-2 columns">
                 <img class="product-image" data-src="assets/saludable.jpg" alt="Alimentos saludables">
                 <p class="product">Alimentos saludables</p>
               </div>
+            
             </div>
           </div>
           <div class="row">
               
               <div class="product-container small-6 medium-4 columns">
-                <img class="product-image" data-src="assets/rectangle.jpg" alt="Bebidas">
+                <img class="product-image" data-src="assets/MAK_6896.jpg" alt="Bebidas">
               </div>
               
               <div class="product-container small-6 medium-4 columns">
-                <img class="product-image" data-src="assets/rectangle.jpg" alt="Golosinas">
+                <img class="product-image" data-src="assets/MAK_6904.jpg" alt="Golosinas">
               </div>
               
               <div class="product-container small-6 medium-4 columns">
-                <img class="product-image" data-src="assets/rectangle.jpg" alt="Snacks">
+                <img class="product-image" data-src="assets/MAK_6968.jpg" alt="Snacks">
               </div>
     
               <div class="product-container small-6 medium-4 columns">
-                <img class="product-image" data-src="assets/rectangle.jpg" alt="Confiteria">
+                <img class="product-image" data-src="assets/MAK_6991.jpg" alt="Confiteria">
               </div>
               
               <div class="product-container small-6 medium-4 columns">
-                <img class="product-image" data-src="assets/rectangle.jpg" alt="Pan dulce">                
+                <img class="product-image" data-src="assets/MAK_7013.jpg" alt="Pan dulce">                
               </div>
               
               <div class="product-container small-6 medium-4 columns">
-                <img class="product-image" data-src="assets/rectangle.jpg" alt="Alimentos saludables">
+                <img class="product-image" data-src="assets/MAK_7026.jpg" alt="Alimentos saludables">
               </div>
             </div>
         </section>
@@ -207,35 +208,40 @@
             <h2 class="section-title">Contacto</h2>
             <p class="section-subtitle">Te interesa poner nuestras maquinas en tu empresa, contactanos!!</p>
           </div>
-          <form action="https://formspree.io/javier@revsys.com.mx" method="POST" novalidate data-abide>
+          <form action="send_form.php" method="POST" novalidate data-abide>
             <div class="row">
               <div class="small-12 medium-6 columns">
                 <label>Nombre
-                  <input type="text" name="nombre" value="" required>
+                  <input type="text" name="first_name" value="" required>
+                  <span class="form-error">This field is required.</span>
                 </label>
               </div>
               <div class="small-12 medium-6 columns">
                 <label>Apellido
-                  <input type="text" name="apellido" value="" required>
+                  <input type="text" name="last_name" value="" required>
+                  <span class="form-error">This field is required.</span>
                 </label>
               </div>
               <div class="small-12 medium-6 columns">
                 <label>Teléfono
-                  <input type="tel" name="tel" value="" required>
+                  <input type="tel" name="telephone" value="" required>
+                  <span class="form-error">This field is required.</span>
                 </label>
               </div>
               <div class="small-12 medium-6 columns">
                 <label>Correo electronico
                   <input type="email" name="email" value="" required>
+                  <span class="form-error">This field is required.</span>
                 </label>
               </div>
               <div class="small-12 columns">
                 <label>Mensaje
-                  <textarea></textarea>
+                  <textarea name="message"></textarea>
+                  <span class="form-error">This field is required.</span>
                 </label>
               </div>
               <div class="small-12 columns">
-                <a id="contact-button" class="button expanded" href="#">Contactanos</a>
+                <a id="contact-button" class="button expanded" href="send_form.php">Contactanos</a>
               </div>
             </div>
           </form>  
@@ -261,9 +267,31 @@
               </a>
             </div>
           </div>
+
           <div class="row">
             <h4>Citybox</h4>
           </div>
+
+          <div class="row footer-contact">
+            <div class="small-6 medium-3 columns">
+              <p>
+                <b>Teléfonos</b><br>
+                +52 (667) 323-49-04<br>
+                +52 (667) 784-57-68
+              </p>
+            </div>
+            <div class="small-6 medium-3 columns">
+              <b>Correo electronico</b><br>
+              contacto@citybox.com
+            </div>
+            <div class="small-6 medium-3 columns">
+              
+            </div>
+            <div class="small-6 medium-3 columns">
+              
+            </div>
+          </div>
+          
           <div class="row footer">
             <div class="column">
               <p id="">Copyright 2017 Citybox Todos los Derechos Reservados.</p>
@@ -272,6 +300,7 @@
               <p id="aviso-privacidad"><a href="#">Aviso de privacidad</a></p>
             </div>
           </div>
+
         </section>
         <!-- /Footer -->
 
@@ -284,9 +313,6 @@
         selector: 'img'
       });
   
-
-
-
       function myMap() {
         var myCenter = new google.maps.LatLng(24.771474, -107.400529);
         var torreAcademica = new google.maps.LatLng(24.821604, -107.382564);
