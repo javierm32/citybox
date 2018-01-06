@@ -204,10 +204,16 @@
 	color: #007DF7;
 }
 
+.error {
+  display: none;
+  color: red;
+}
+
 #contact-button {
 	font-weight: bold;
 }
 /* Ubicaciones */
+
 
 
 /* Footer */
